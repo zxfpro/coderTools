@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Welcome to CODERTOOLS
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![](<work.png>)
 
-## Commands
+## 本工具的主要目标是让大模型可以丝滑的使用和理解第三方的工具包
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+我们大致的思路是: 大模型可以达到理解并使用第三方包的程度
+而我们开发的私有包则通过标准化和规范化,进而使大模型理解
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+在大模型可以完美使用一个三方包时, 可以开始拓展到多个包的配合使用
+框架级别的包的使用等.为最终的调度赋能.
