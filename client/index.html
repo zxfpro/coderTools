@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#codertools.packager.function" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -347,6 +352,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    client
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -358,6 +376,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function" class="md-nav__link">
+    <span class="md-ellipsis">
+      function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function.process_github_issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_github_issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function.process_github_repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_github_repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      reader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="reader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader.read_github_issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_github_issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader.read_github_repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_github_repo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -389,6 +493,83 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function" class="md-nav__link">
+    <span class="md-ellipsis">
+      function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function.process_github_issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_github_issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codertools.packager.function.process_github_repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      process_github_repo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      reader
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="reader">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader" class="md-nav__link">
+    <span class="md-ellipsis">
+      reader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader.read_github_issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_github_issue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#codertools.packager.reader.read_github_repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      read_github_repo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -403,9 +584,408 @@
 
 
 
-  <h1>client</h1>
+<p>这是一个针对第三方包做基准笔记的工具</p>
 
 
+<div class="doc doc-object doc-module">
+
+
+
+<a id="codertools.packager.function"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="codertools.packager.function.process_github_issues" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">process_github_issues</span><span class="p">(</span><span class="n">base_path</span><span class="o">=</span><span class="s1">&#39;./test2_md&#39;</span><span class="p">,</span> <span class="n">github_path</span><span class="o">=</span><span class="s1">&#39;tqdm/tqdm&#39;</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>从GitHub读取问题，生成相应的Markdown文件。   </p>
+<p>base_path : 基础路径 <br />
+github_path : 目标仓库 tqdm/tqdm</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>codertools/packager/function.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_github_issues</span><span class="p">(</span><span class="n">base_path</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;./test2_md&quot;</span><span class="p">,</span><span class="n">github_path</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;tqdm/tqdm&quot;</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    从GitHub读取问题，生成相应的Markdown文件。   </span>
+
+<span class="sd">    base_path : 基础路径   </span>
+<span class="sd">    github_path : 目标仓库 tqdm/tqdm   </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">owner</span><span class="p">,</span><span class="n">repo</span> <span class="o">=</span> <span class="n">github_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+    <span class="n">issue_documents</span> <span class="o">=</span> <span class="n">read_github_issue</span><span class="p">(</span><span class="n">owner</span><span class="o">=</span><span class="n">owner</span><span class="p">,</span> <span class="n">repo</span><span class="o">=</span><span class="n">repo</span><span class="p">)</span>
+
+    <span class="n">issues</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">issue_document</span> <span class="ow">in</span> <span class="n">issue_documents</span><span class="p">:</span>
+        <span class="n">question</span> <span class="o">=</span> <span class="n">issue_document</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">http_url</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">issue_document</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;url&#39;</span><span class="p">),</span> <span class="s1">&#39;comments&#39;</span><span class="p">)</span>
+        <span class="c1"># answer_markdown = get_comments(http_url)</span>
+        <span class="c1"># answer_markdown = answer_markdown or &#39;&#39;</span>
+        <span class="n">answer_markdown</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+        <span class="n">topic</span> <span class="o">=</span> <span class="n">question</span><span class="p">[:</span><span class="mi">20</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span><span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39;_&#39;</span><span class="p">)</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic</span> <span class="o">=</span> <span class="n">topic</span><span class="p">,</span>
+                        <span class="n">describe</span> <span class="o">=</span><span class="n">question</span><span class="p">,</span>
+                        <span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">),</span>
+                        <span class="n">link</span> <span class="o">=</span> <span class="n">http_url</span><span class="p">)</span>
+        <span class="n">issues</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">topic</span><span class="p">:</span><span class="n">values</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">answer_markdown</span><span class="p">})</span>
+
+    <span class="k">for</span> <span class="n">topic</span><span class="p">,</span><span class="n">content</span> <span class="ow">in</span> <span class="n">issues</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">save_to_file</span><span class="p">(</span><span class="n">content</span><span class="p">,</span><span class="n">base_path</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">topic</span><span class="si">}</span><span class="s2">.md&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="codertools.packager.function.process_github_repo" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">process_github_repo</span><span class="p">(</span><span class="n">base_path</span><span class="o">=</span><span class="s1">&#39;./test_md&#39;</span><span class="p">,</span> <span class="n">github_path</span><span class="o">=</span><span class="s1">&#39;tqdm/tqdm&#39;</span><span class="p">,</span> <span class="n">overwrite_files</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>从GitHub存储库读取文档，解析其Markdown内容并创建文件结构.   </p>
+<p>base_path : 基础路径   </p>
+<p>github_path : 目标仓库 tqdm/tqdm</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>codertools/packager/function.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_github_repo</span><span class="p">(</span><span class="n">base_path</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;./test_md&quot;</span><span class="p">,</span><span class="n">github_path</span><span class="p">:</span><span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;tqdm/tqdm&quot;</span><span class="p">,</span><span class="n">overwrite_files</span><span class="p">:</span><span class="nb">bool</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">-&gt;</span><span class="kc">None</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    从GitHub存储库读取文档，解析其Markdown内容并创建文件结构.   </span>
+
+<span class="sd">    base_path : 基础路径   </span>
+
+<span class="sd">    github_path : 目标仓库 tqdm/tqdm   </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">owner</span><span class="p">,</span><span class="n">repo</span> <span class="o">=</span> <span class="n">github_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
+    <span class="n">docs_documents</span> <span class="o">=</span> <span class="n">read_github_repo</span><span class="p">(</span><span class="n">owner</span><span class="o">=</span><span class="n">owner</span><span class="p">,</span> <span class="n">repo</span><span class="o">=</span><span class="n">repo</span><span class="p">)</span>
+
+    <span class="n">file_dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">docs_document</span> <span class="ow">in</span> <span class="n">docs_documents</span><span class="p">:</span>
+        <span class="n">file_name</span> <span class="o">=</span> <span class="n">docs_document</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;file_name&quot;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="n">docs_document</span><span class="o">.</span><span class="n">text</span>
+        <span class="n">structure</span> <span class="o">=</span> <span class="n">parse_markdown_to_custom_structure</span><span class="p">(</span><span class="n">markdown_content</span><span class="o">=</span><span class="n">text</span><span class="p">,</span>
+                                                       <span class="n">folder_name</span><span class="o">=</span><span class="n">file_name</span><span class="p">)</span>
+        <span class="n">file_dict</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">structure</span><span class="p">)</span>
+
+    <span class="c1"># overwrite_files = True</span>
+    <span class="n">create_file_structure</span><span class="p">(</span><span class="n">file_dict</span><span class="p">,</span> <span class="n">base_path</span><span class="o">=</span><span class="n">base_path</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="n">overwrite_files</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div><h1 id="reader">reader</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+
+<a id="codertools.packager.reader"></a>
+    <div class="doc doc-contents first">
+
+
+
+
+
+
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="codertools.packager.reader.read_github_issue" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">read_github_issue</span><span class="p">(</span><span class="n">owner</span><span class="o">=</span><span class="s1">&#39;pydantic&#39;</span><span class="p">,</span> <span class="n">repo</span><span class="o">=</span><span class="s1">&#39;pydantic&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">labelFilter</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>读取github仓库中的 issue 问题集 <br />
+owner: str 作者
+repo: str 仓库名
+state : 仓库状态 state or GitHubRepositoryIssuesReader.IssueState.CLOSED,# GitHubRepositoryIssuesReader.IssueState.OPEN or .CLOSED or .ALL
+labelFilters: 按照标签筛选内容 暂未开放</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>codertools/packager/reader.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_github_issue</span><span class="p">(</span><span class="n">owner</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;pydantic&quot;</span><span class="p">,</span>
+                      <span class="n">repo</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;pydantic&quot;</span><span class="p">,</span>
+                      <span class="n">state</span><span class="p">:</span><span class="n">GitHubRepositoryIssuesReader</span><span class="o">.</span><span class="n">IssueState</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                      <span class="n">labelFilter</span><span class="p">:</span><span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span><span class="o">-&gt;</span><span class="s1">&#39;documents&#39;</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    读取github仓库中的 issue 问题集   </span>
+<span class="sd">    owner: str 作者</span>
+<span class="sd">    repo: str 仓库名</span>
+<span class="sd">    state : 仓库状态 state or GitHubRepositoryIssuesReader.IssueState.CLOSED,# GitHubRepositoryIssuesReader.IssueState.OPEN or .CLOSED or .ALL</span>
+<span class="sd">    labelFilters: 按照标签筛选内容 暂未开放</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">github_client</span> <span class="o">=</span> <span class="n">GitHubIssuesClient</span><span class="p">(</span><span class="n">github_token</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;GITHUB_TOKEN&quot;</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">GitHubRepositoryIssuesReader</span><span class="p">(</span>
+        <span class="n">github_client</span><span class="o">=</span><span class="n">github_client</span><span class="p">,</span>
+        <span class="n">owner</span><span class="o">=</span><span class="n">owner</span><span class="p">,</span>
+        <span class="n">repo</span><span class="o">=</span><span class="n">repo</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+    <span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span>
+        <span class="n">state</span><span class="o">=</span><span class="n">state</span> <span class="ow">or</span> <span class="n">GitHubRepositoryIssuesReader</span><span class="o">.</span><span class="n">IssueState</span><span class="o">.</span><span class="n">CLOSED</span><span class="p">,</span><span class="c1"># GitHubRepositoryIssuesReader.IssueState.OPEN or .CLOSED or .ALL</span>
+        <span class="c1">#labelFilters= labelFilters or [(&quot;bug V2&quot;, GitHubRepositoryIssuesReader.FilterType.INCLUDE)], # 根据标签过滤</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">documents</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h2 id="codertools.packager.reader.read_github_repo" class="doc doc-heading">
+            <code class="highlight language-python"><span class="n">read_github_repo</span><span class="p">(</span><span class="n">owner</span><span class="o">=</span><span class="s1">&#39;pydantic&#39;</span><span class="p">,</span> <span class="n">repo</span><span class="o">=</span><span class="s1">&#39;pydantic&#39;</span><span class="p">,</span> <span class="n">branch</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="p">,</span> <span class="n">filter_directories</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">filter_file_extensions</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+</h2>
+
+
+    <div class="doc doc-contents ">
+
+        <p>读取github仓库中的文档或者其他文件内容 <br />
+owner: str 作者 <br />
+repo: str 仓库名 <br />
+branch : 分支 <br />
+filter_directories: 按照文件夹筛选(包含)  ["docs/concepts"] <br />
+filter_file_extensions: 按照文件类型筛选 (排除)</p>
+
+
+            <details class="quote">
+              <summary>Source code in <code>codertools/packager/reader.py</code></summary>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">read_github_repo</span><span class="p">(</span><span class="n">owner</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;pydantic&quot;</span><span class="p">,</span>
+                     <span class="n">repo</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;pydantic&quot;</span><span class="p">,</span>
+                     <span class="n">branch</span><span class="p">:</span><span class="nb">str</span><span class="o">=</span><span class="s2">&quot;main&quot;</span><span class="p">,</span>
+                     <span class="n">filter_directories</span><span class="p">:</span><span class="nb">list</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                     <span class="n">filter_file_extensions</span><span class="p">:</span><span class="nb">list</span> <span class="o">=</span> <span class="kc">None</span>
+                     <span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    读取github仓库中的文档或者其他文件内容   </span>
+<span class="sd">    owner: str 作者   </span>
+<span class="sd">    repo: str 仓库名   </span>
+<span class="sd">    branch : 分支   </span>
+<span class="sd">    filter_directories: 按照文件夹筛选(包含)  [&quot;docs/concepts&quot;]   </span>
+<span class="sd">    filter_file_extensions: 按照文件类型筛选 (排除)   </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">github_client</span> <span class="o">=</span> <span class="n">GithubClient</span><span class="p">(</span><span class="n">github_token</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;GITHUB_TOKEN&quot;</span><span class="p">],</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">GithubRepositoryReader</span><span class="p">(</span>
+        <span class="n">github_client</span><span class="o">=</span><span class="n">github_client</span><span class="p">,</span>
+        <span class="n">owner</span><span class="o">=</span><span class="n">owner</span><span class="p">,</span>
+        <span class="n">repo</span><span class="o">=</span><span class="n">repo</span><span class="p">,</span>
+        <span class="n">use_parser</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">filter_directories</span><span class="o">=</span><span class="p">(</span>
+            <span class="n">filter_directories</span> <span class="ow">or</span> <span class="p">[</span><span class="s2">&quot;docs/concepts&quot;</span><span class="p">],</span>
+            <span class="n">GithubRepositoryReader</span><span class="o">.</span><span class="n">FilterType</span><span class="o">.</span><span class="n">INCLUDE</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="n">filter_file_extensions</span><span class="o">=</span><span class="p">(</span>
+            <span class="n">filter_file_extensions</span> <span class="ow">or</span> <span class="p">[</span>
+                <span class="s2">&quot;.png&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.jpg&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.jpeg&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.gif&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.svg&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.ico&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;.ipynb&quot;</span><span class="p">,</span>
+            <span class="p">],</span>
+            <span class="n">GithubRepositoryReader</span><span class="o">.</span><span class="n">FilterType</span><span class="o">.</span><span class="n">EXCLUDE</span><span class="p">,</span>
+        <span class="p">),</span>
+    <span class="p">)</span>
+
+    <span class="n">documents</span> <span class="o">=</span> <span class="n">reader</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">branch</span><span class="o">=</span><span class="n">branch</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">documents</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
 
 
 
