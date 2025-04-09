@@ -16,6 +16,7 @@ mkdocs gh-deploy # 同步到github网站
 ```
 
 ### 运行测试并同步到测试服务
+pip install pytest-html
 ```
 uv run pytest --html=/Users/zhaoxuefeng/GitHub/aiworker/html/codetools.html
 ```
