@@ -20,3 +20,10 @@ pip install pytest-html
 ```
 uv run pytest --html=/Users/zhaoxuefeng/GitHub/aiworker/html/codetools.html
 ```
+
+pip install twine
+pip install setuptools wheel
+
+python setup.py sdist bdist_wheel
+twine upload dist/*
+

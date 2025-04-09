@@ -10,4 +10,5 @@ dependencies = [
     "pinecone>=6.0.2",
     "pytest>=8.3.5",
     "pytest-html>=4.1.1",
+    "setuptools>=78.1.0",
 ]
