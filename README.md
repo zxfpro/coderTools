@@ -8,22 +8,21 @@ code 工具
 ```
 uv export --format requirements-txt > requirements.txt
 ```
-
 ### 更新文档
 ```
 mkdocs serve # 预览
 mkdocs gh-deploy # 同步到github网站
 ```
 
+### 发布
+```
+uv build
+uv publish
+```
+
 ### 运行测试并同步到测试服务
-pip install pytest-html
+```
+bash run_test.sh
 ```
 uv run pytest --html=/Users/zhaoxuefeng/GitHub/aiworker/html/codetools.html
-```
-
-pip install twine
-pip install setuptools wheel
-
-python setup.py sdist bdist_wheel
-twine upload dist/*
-
+pip install pytest-html

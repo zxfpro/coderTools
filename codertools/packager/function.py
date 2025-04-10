@@ -17,7 +17,8 @@ status:
 ---
 """
 
-def process_github_repo(base_path:str="./test_md",github_path:str = "tqdm/tqdm",overwrite_files:bool=True)->None:
+def process_github_repo(base_path:str="./test_md",github_path:str = "tqdm/tqdm",overwrite_files:bool=True,
+                        filter_directories=None)->None:
     """
     从GitHub存储库读取文档，解析其Markdown内容并创建文件结构.   
 
@@ -26,7 +27,7 @@ def process_github_repo(base_path:str="./test_md",github_path:str = "tqdm/tqdm",
     github_path : 目标仓库 tqdm/tqdm   
     """
     owner,repo = github_path.split('/')
-    docs_documents = read_github_repo(owner=owner, repo=repo)
+    docs_documents = read_github_repo(owner=owner, repo=repo,filter_directories=filter_directories)
 
     file_dict = {}
     for docs_document in docs_documents:

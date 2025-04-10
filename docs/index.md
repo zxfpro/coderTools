@@ -9,3 +9,16 @@
 
 在大模型可以完美使用一个三方包时, 可以开始拓展到多个包的配合使用
 框架级别的包的使用等.为最终的调度赋能.
+
+
+```python
+!pip install codertools
+
+
+import codertools
+
+from codertools.packager import process_github_repo,process_github_issues
+
+process_github_repo('./test2_md2','pydantic/pydantic')
+
+```
