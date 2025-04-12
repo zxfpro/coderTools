@@ -1,5 +1,16 @@
 import os
+from datetime import datetime
 
+template = """---
+topic: {topic}
+describe: {describe}
+creation date: {date}
+type: 案例
+tags: []
+status: false
+链接: None
+---
+"""
 
 def save_to_file(markdown, base_path,filename="output.md"):
     os.makedirs(base_path, exist_ok=True)
@@ -34,6 +45,10 @@ def create_file_structure(data, base_path=".", overwrite=False):
                     continue
                 
                 with open(folder_md_file, "w", encoding="utf-8") as f:
+                    f.write(template.format(topic=key,
+                                            describe='描述',
+                                            date=datetime.today().strftime("%Y-%m-%d"),
+                                            ))
                     f.write(value.get("text", ""))
                 
                 # 递归处理文件夹内容

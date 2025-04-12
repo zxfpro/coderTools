@@ -6,12 +6,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pytest
 from pathlib import Path
-from codertools.packager import process_github_issues,process_github_repo
+from codertools import process_github_issues,process_github_repo
 
 def test_process_github_repo():
     # 模拟 read_github_repo 的返回值
-    tmp_path = "work2"
-    print(tmp_path,'tmp_path')
+    tmp_path = "/Users/zhaoxuefeng/GitHub/obsidian_base/Ground/tqdm/docs"
     test_base_path = Path(tmp_path)
     test_base_path.mkdir(exist_ok=True)    
     process_github_repo(base_path=test_base_path,github_path='pydantic/pydantic')
@@ -21,7 +20,7 @@ def test_process_github_repo():
 
 def test_process_github_issues():
     # 模拟 read_github_repo 的返回值
-    tmp_path = "work1"
+    tmp_path = "/Users/zhaoxuefeng/GitHub/obsidian_base/Ground/tqdm/issue"
     test_base_path = Path(tmp_path)
     test_base_path.mkdir(exist_ok=True)    
     process_github_issues(base_path=test_base_path,github_path='tqdm/tqdm')
@@ -29,5 +28,3 @@ def test_process_github_issues():
     assert any(test_base_path.iterdir())
 
 
-if __name__ == "__main__":
-    process_github_repo(base_path='work2',github_path='pydantic/pydantic')

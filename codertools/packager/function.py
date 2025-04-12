@@ -12,7 +12,7 @@ describe: {describe}
 creation date: {date}
 type: 案例
 tags: []
-status:
+status: false
 链接: {link}
 ---
 """
@@ -55,15 +55,16 @@ def process_github_issues(base_path:str = "./test2_md",github_path:str = "tqdm/t
     for issue_document in issue_documents:
         question = issue_document.text
         http_url = os.path.join(issue_document.metadata.get('url'), 'comments')
+        # topic = question[:20].replace('/','_').replace('\n','_')
+        topic = issue_document.metadata.get('url').rsplit('/',1)[1]
+        values = template.format(topic = topic,
+                        describe ='第 #{topic}问题 ',
+                        date = datetime.today().strftime("%Y-%m-%d"),
+                        link = http_url)
+        issues.update({topic:values + '\n\n' + question})
         # answer_markdown = get_comments(http_url)
         # answer_markdown = answer_markdown or ''
         answer_markdown = ''
-        topic = question[:20].replace('/','_').replace('\n','_')
-        values = template.format(topic = topic,
-                        describe =question,
-                        date = datetime.today().strftime("%Y-%m-%d"),
-                        link = http_url)
-        issues.update({topic:values + '\n\n' + answer_markdown})
 
     for topic,content in issues.items():
         save_to_file(content,base_path,f"{topic}.md")
