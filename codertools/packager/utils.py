@@ -98,6 +98,7 @@ def parse_markdown_to_custom_structure(markdown_content: str, folder_name: str =
         # 将每个部分按第一个换行符分割为标题和内容
         if "\n" in part:
             title, content = part.split("\n", 1)
+            title = title.replace('`','')
             md_entry = {
                 "type": "md",
                 "text": content.strip()
