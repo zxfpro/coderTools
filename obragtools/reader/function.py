@@ -1,7 +1,6 @@
 
 from .reader import read_github_issue,read_github_repo
-from .utils import save_to_file,create_file_structure, parse_markdown_to_custom_structure
-from .utils2 import get_comments
+from .utils import save_to_file,create_file_structure, parse_markdown_to_custom_structure, get_comments
 from datetime import datetime
 import time
 import os
@@ -38,7 +37,6 @@ def process_github_repo(base_path:str="./test_md",github_path:str = "tqdm/tqdm",
                                                        folder_name=file_name)
         file_dict.update(structure)
 
-    # overwrite_files = True
     create_file_structure(file_dict, base_path=base_path, overwrite=overwrite_files)
 
 def process_github_issues(base_path:str = "./test2_md",github_path:str = "tqdm/tqdm")->None:
@@ -56,17 +54,26 @@ def process_github_issues(base_path:str = "./test2_md",github_path:str = "tqdm/t
     for issue_document in issue_documents:
         question = issue_document.text
         http_url = os.path.join(issue_document.metadata.get('url'), 'comments')
-        # topic = question[:20].replace('/','_').replace('\n','_')
         topic = issue_document.metadata.get('url').rsplit('/',1)[1]
         values = template.format(topic = topic,
                         describe ='第 #{topic}问题 ',
                         date = datetime.today().strftime("%Y-%m-%d"),
                         link = http_url)
         issues.update({topic:values + '\n\n' + question})
-        # answer_markdown = get_comments(http_url)
-        # answer_markdown = answer_markdown or ''
-        answer_markdown = ''
 
     for topic,content in issues.items():
         save_to_file(content,base_path,f"{topic}.md")
 
+# answer_markdown = get_comments(http_url)
+
+def get_issue_answer(http_url:str)->str:
+    """从url获取问题的回答
+
+    Args:
+        http_url (str): 问题的回答的url链接
+
+    Returns:
+        str: 回答
+    """
+    answer_markdown = get_comments(http_url)
+    return answer_markdown
